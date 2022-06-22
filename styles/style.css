@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Body*/
+body {
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(/images/bg-intro-mobile.png);
+    font-size: 16px;
+}
+
+.error-texto, .error-icon {
+    display: none;
+}
+
+.tudo {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.textos {
+   color: hsl(0, 0%, 100%);
+}
+
+.textos h1{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.textos p {
+    
+    line-height: 1.9rem;
+}
+
+.caixas {
+    
+}
+
+
+
+
+
+/*Rodapé*/
+.rodape { 
+    font-size: 11px; 
+    text-align: center;
+    font-weight: bold; 
+}
+.rodape a { color: hsl(228, 45%, 44%); }
