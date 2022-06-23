@@ -8,7 +8,7 @@ body {
     font-family: 'Overpass', sans-serif;
     font-family: 'Poppins', sans-serif;
     background-color: hsl(0, 100%, 74%);
-    background-image: url(/images/bg-intro-mobile.png);
+    background-image: url(./images/bg-intro-mobile.png);
     font-size: 16px;
 }
 
@@ -179,7 +179,7 @@ body {
 /*Responsivo*/
 @media screen and (min-width: 1000px) {
     body {
-        background-image: url(/images/bg-intro-desktop.png); 
+        background-image: url(./images/bg-intro-desktop.png); 
     }
 
     .tudo {
