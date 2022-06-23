@@ -100,7 +100,7 @@ body {
 
 .segunda-caixa input::placeholder {
     color: hsla(249, 10%, 26%, 0.678);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
@@ -126,19 +126,20 @@ body {
 
 .segunda-caixa button[type = submit]:hover {
     background-color: hsl(154, 80%, 63%);
+    cursor: pointer;
 }
 
 .error-icon {
-    display: block;
+    
     position: absolute;
     top: 25%;
     right: 20px;
 }
 
 .error-texto {
-    display: block;
+    
     text-align: right;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     font-style: italic;
     color: hsl(0, 100%, 74%);
     font-weight: 500;
@@ -157,8 +158,63 @@ body {
 
 /*Rodapé*/
 .rodape { 
-    font-size: 11px; 
+    font-size: 0.7rem; 
     text-align: center;
     font-weight: bold; 
+    margin: 10px 0;
 }
 .rodape a { color: hsl(228, 45%, 44%); }
+
+
+/*Responsivo*/
+@media screen and (min-width: 1000px) {
+    body {
+        background-image: url(/images/bg-intro-desktop.png); 
+    }
+
+    .tudo {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .textos {
+        max-width: 35%;
+    }
+
+    .textos h1 {
+        font-size: 3rem;
+        line-height: 4.5rem;
+        text-align: left;
+    }
+
+    .textos p {
+        text-align: left;
+        font-size: 1rem;
+        line-height: 2.2rem;
+    }
+
+    .caixas {
+        width: 34rem;
+    }
+
+    .primeira-caixa {
+        height: 3.75rem;
+    }
+
+    .primeira-caixa p {
+        font-size: 1rem;
+    }
+
+    .segunda-caixa {
+        height: 29.688rem;
+    }
+
+    .segunda-caixa input {
+        margin-bottom: 0px;
+    }
+
+    .segunda-caixa button[type = submit] {
+        margin-bottom: 0px;
+        font-size: 1rem;
+    }
+}
