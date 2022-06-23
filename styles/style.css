@@ -22,37 +22,138 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
     flex-direction: column;
     text-align: center;
-    padding: 0 30px;
+    padding: 100px 25px;
     max-width: 1300px;
     margin: 0 auto;
-    gap: 50px;
-}
-
-.textos {
-   color: hsl(0, 0%, 100%);
+    gap: 60px;
 }
 
 .textos h1{
     font-size: 2rem;
     line-height: 3rem;
     margin-bottom: 2rem;
+    color: hsl(0, 0%, 100%);
 }
 
 .textos p {
-    
-    line-height: 1.9rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
+    color: hsl(18, 100%, 95%);
 }
 
-.caixas {
-    
+.primeira-caixa {
+    background-color: hsl(248, 32%, 49%);
+    padding: 15px 90px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 7px hsl(249, 10%, 26%, 0.404);
+    margin-bottom: 30px;
 }
 
+.primeira-caixa p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
 
+.primeira-caixa p span {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
 
+.segunda-caixa {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 7px hsl(249, 10%, 26%, 0.404);
+}
 
+.segunda-caixa label {
+    display: none;
+}
+
+.grupo-campos {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.segunda-caixa input {
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1.3px solid hsl(246, 25%, 77%);
+    padding-left: 20px;
+    outline: none;
+    font-weight: bold;
+    color: hsl(249, 10%, 26%) ;
+}
+
+.segunda-caixa input:focus {
+    border: 1.5px solid hsl(249, 10%, 26%);
+}
+
+.segunda-caixa input::placeholder {
+    color: hsla(249, 10%, 26%, 0.678);
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.segunda-caixa button[type = submit] {
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(154, 59%, 51%);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    box-shadow: 0 3px hsl(154, 56%, 44%);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.segunda-caixa button[type = submit]:hover {
+    background-color: hsl(154, 80%, 63%);
+}
+
+.error-icon {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+}
+
+.error-texto {
+    display: block;
+    text-align: right;
+    font-size: 0.6rem;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+}
+
+.texto-submit {
+    margin-top: 10px;
+    color: hsl(246, 25%, 77%);
+    font-size: 0.75rem;
+}
+
+.texto-submit span {
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
 
 /*Rodapé*/
 .rodape { 
