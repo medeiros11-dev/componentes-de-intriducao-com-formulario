@@ -12,9 +12,14 @@ body {
     font-size: 16px;
 }
 
-.error-texto, .error-icon {
+.error-icon {
     display: none;
 }
+
+.error-texto {
+    display: none;
+}
+
 
 .tudo {
     min-height: 100vh;
@@ -80,6 +85,26 @@ body {
     margin-bottom: 25px;
 }
 
+.grupo-campos.on .error-icon {
+    display: block;
+    position: absolute;
+    top: 25%;
+    right: 20px;
+}
+
+.grupo-campos.on .error-texto {
+    display: block;
+    text-align: right;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-weight: 500;
+}
+
+.grupo-campos.on input {
+    border: 2px solid hsl(0, 100%, 74%);
+}
+
 .segunda-caixa input {
     font-family: 'Overpass', sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -129,21 +154,6 @@ body {
     cursor: pointer;
 }
 
-.error-icon {
-    
-    position: absolute;
-    top: 25%;
-    right: 20px;
-}
-
-.error-texto {
-    
-    text-align: right;
-    font-size: 0.75rem;
-    font-style: italic;
-    color: hsl(0, 100%, 74%);
-    font-weight: 500;
-}
 
 .texto-submit {
     margin-top: 10px;
@@ -203,10 +213,6 @@ body {
 
     .primeira-caixa p {
         font-size: 1rem;
-    }
-
-    .segunda-caixa {
-        height: 29.688rem;
     }
 
     .segunda-caixa input {
