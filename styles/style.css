@@ -173,7 +173,10 @@ body {
     font-weight: bold; 
     margin: 10px 0;
 }
-.rodape a { color: hsl(228, 45%, 44%); }
+.rodape a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;  
+}
 
 
 /*Responsivo*/
